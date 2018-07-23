@@ -19,7 +19,7 @@ public class ProductListingPage {
     @FindBy(how = How.CSS, using = "button.single_add_to_cart_button")
     private WebElement btn_AddToCart;
 
-    @FindAll(@FindBy(how = How.CSS, using = ".noo-product-inner"))
+    @FindAll(@FindBy(how = How.XPATH, using = "//div[@class='noo-product-inner noo-product-inner2']"))
     private List<WebElement> prd_List;
 
     public void clickOn_AddToCart() {
@@ -28,6 +28,7 @@ public class ProductListingPage {
     }
 
     public void select_Product(int productNumber) {
+        System.out.println(prd_List.size());
         prd_List.get(productNumber).click();
     }
 

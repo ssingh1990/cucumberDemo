@@ -9,7 +9,6 @@ public class HomePage {
     // Create cunstructor to inatlized driver object and Page Facteory inatialztion
 
     public HomePage(WebDriver driver){
-
         this.driver=driver;
         PageFactory.initElements(driver,this);
     }
