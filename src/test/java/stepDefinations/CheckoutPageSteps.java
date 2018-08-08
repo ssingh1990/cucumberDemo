@@ -2,21 +2,24 @@ package stepDefinations;
 
 import cucumber.TestContext;
 import cucumber.api.java.en.When;
+import managers.FileReaderManager;
 import pageObjects.CheckoutPage;
+import testDataTypes.Customer;
 
 public class CheckoutPageSteps {
 
     TestContext testContext;
     CheckoutPage checkoutPage;
-
+    //Customer customer;
     public CheckoutPageSteps(TestContext context){
         testContext = context;
         checkoutPage = testContext.getPageObjectManager().getCheckoutpage();
     }
 
-    @When("^enter the personal details on checkout page$")
-    public void enter_personal_details_on_checkout_page() throws InterruptedException {
-       checkoutPage.fill_PersonalDetails();
+    @When("^enter \"([^\"]*)\" personal details on checkout page$")
+    public void enter_personal_details_on_checkout_page(String cust) throws InterruptedException {
+        Customer customer = FileReaderManager.getInstance().getJsonDataReader().getCustomerByName("sat");
+        checkoutPage.fill_PersonalDetails(customer);
     }
 
     @When("^select some deleivry address$")
@@ -33,5 +36,6 @@ public class CheckoutPageSteps {
     public void place_the_order() throws InterruptedException {
         checkoutPage.check_TermsAndCondition(true);
         checkoutPage.clickOn_PlaceOrder();
+
     }
 }

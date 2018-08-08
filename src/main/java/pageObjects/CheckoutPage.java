@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import testDataTypes.Customer;
 
 public class CheckoutPage {
 
@@ -126,6 +127,8 @@ public class CheckoutPage {
 
     public void select_PaymentMethod(String paymentMethod) {
         if(paymentMethod.equals("CheckPayment")) {
+            try { Thread.sleep(5000);}
+            catch (InterruptedException e) {}
             paymentMethod_List.get(0).click();
         }else if(paymentMethod.equals("Cash")) {
             paymentMethod_List.get(1).click();
@@ -147,16 +150,16 @@ public class CheckoutPage {
     }
 
 
-    public void fill_PersonalDetails() {
-        enter_Name("Aotomation");
-        enter_LastName("Test");
-        enter_Phone("0000000000");
-        enter_Email("Automation@gmail.com");
-        select_Country("India");
-        enter_City("Delhi");
-        enter_Address("vikaspuri");
-        enter_PostCode("110088");
-        select_County("Delhi");
+    public void fill_PersonalDetails(Customer customer) {
+        enter_Name(customer.firstName);
+        enter_LastName(customer.lastName);
+        enter_Phone(customer.phoneNumber.mob);
+        enter_Email(customer.emailAddress);
+        select_Country(customer.address.country);
+        enter_City(customer.address.city);
+        enter_Address(customer.address.streetAddress);
+        enter_PostCode(customer.address.postCode);
+        select_County(customer.address.county);
 
     }
 

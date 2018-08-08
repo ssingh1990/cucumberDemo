@@ -1,0 +1,158 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16117115136,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSteps()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Placing order",
+        "description": "",
+        "id": "auomated-e2e;placing-order",
+        "after": [
+          {
+            "result": {
+              "duration": 4154565612,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13957731735,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13574931542,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "he search for \"dresses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dresses",
+                  "offset": 15
+                }
+              ],
+              "location": "HomePageSteps.he_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17139248157,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "chose to bye the first item",
+            "match": {
+              "location": "ProductPageSteps.choose_to_buy_the_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23374920016,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "move to checkout from mini cart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35590835579,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter \"customer\" personal details on checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer",
+                  "offset": 7
+                }
+              ],
+              "location": "CheckoutPageSteps.enter_personal_details_on_checkout_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8175672705,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "select some deleivry address",
+            "match": {
+              "location": "CheckoutPageSteps.select_same_delivery_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13119997127,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "select payment method as \"check\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "check",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutPageSteps.select_payment_method_as_payment(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5182837613,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "place order",
+            "match": {
+              "location": "CheckoutPageSteps.place_the_order()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Auomated E2E",
+    "description": "",
+    "id": "auomated-e2e",
+    "keyword": "Feature",
+    "uri": "End2End_Test.feature"
+  }
+]
