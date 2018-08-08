@@ -14,6 +14,7 @@ import java.io.File;
         glue= {"stepDefinations"},
     //    plugin = { "pretty", "html:target/cucumber-reports", "json:target/cucumber-reports/Cucumber.json", "junit:target/cucumber-reports/Cucumber.xml" },
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+        tags = {"~@smoke", "@regression"},
         monochrome = true
 
 )
