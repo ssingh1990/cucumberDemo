@@ -24,8 +24,7 @@ public class Hooks {
     @Before
     public void beforeScenario(Scenario scenario){
         Reporter.assignAuthor("GANESH KUMAR");
-
-        		/*What all you can perform here
+         /*What all you can perform here
 			Starting a webdriver
 			Setting up DB connections
 			Setting up test data
