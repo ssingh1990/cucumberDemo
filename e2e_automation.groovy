@@ -1,23 +1,29 @@
-#!groovy
-node {
-    stage('Git checkout') { // for display purposes
-        git 'https://github.com/gkron/seleniumCucumber.git'
-    }
-    stage('Smoke') {
-        try {
-            sh "mvn clean verify -Dtags='regression'"
-        } catch (err) {
+pipeline {
+    agent any
 
-        } finally {
-            publishHTML (target: [
-                    reportDir: 'target/site/selenoumcucumber',
-                    reportFiles: 'index.html',
-                    reportName: "Smoke tests report"
-            ])
+    stages {
+        stage ('Compile Stage') {
+
+            steps {
+
+                    sh 'mvn clean compile'
+
+            }
         }
-    }
 
-    stage('Results') {
-        junit '**/target/failsafe-reports/*.xml'
+        stage ('Testing Stage') {
+            steps {
+
+                    sh 'mvn test'
+
+            }
+        }
+
+
+        stage ('Deployment Stage') {
+            steps {
+                  sh 'mvn deploy'
+                }
+             }
     }
 }
