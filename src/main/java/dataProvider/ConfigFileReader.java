@@ -11,7 +11,7 @@ import java.util.Properties;
 public class ConfigFileReader {
 
     private Properties properties;
-    private final String propertyFilePath = "E:\\seleniumCucumber\\cucumber\\configs\\Configuation.properties";
+    private final String propertyFilePath = "E:\\ssingh\\cucumberDemo\\configs\\Configuation.properties";
 
     public ConfigFileReader() {
         BufferedReader reader;

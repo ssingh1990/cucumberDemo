@@ -1,18 +1,16 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.CartPage;
-import pageObjects.CheckoutPage;
+import pageObjects.FinalSearchResultPage;
+import pageObjects.SearchResult;
 import pageObjects.HomePage;
-import pageObjects.ProductListingPage;
 
 public class PageObjectManager {
 
     private WebDriver driver;
     private HomePage homepage;
-    private ProductListingPage productlistingpage;
-    private CartPage cartpage;
-    private CheckoutPage checkoutpage;
+    private SearchResult searchresult;
+    private FinalSearchResultPage finalSearchResultPage;
 
     public PageObjectManager(WebDriver driver){
         this.driver=driver;
@@ -22,17 +20,12 @@ public class PageObjectManager {
         return (homepage==null)? homepage=new HomePage(driver): homepage;
         }
 
-     public ProductListingPage getProductlistingpage(){
-        return (productlistingpage==null)? productlistingpage= new ProductListingPage(driver): productlistingpage;
-     }
+    public SearchResult getSearchresultpage(){
+        return  (searchresult==null)? searchresult=new SearchResult(driver): searchresult;
+    }
 
-     public CartPage getCartpage(){
-         return (cartpage==null)? cartpage=new CartPage(driver): cartpage;
-     }
-
-     public CheckoutPage getCheckoutpage(){
-         return (checkoutpage==null)? checkoutpage=new CheckoutPage(driver): checkoutpage;
-     }
-
+    public FinalSearchResultPage getFinalSearchResultPage(){
+        return  (finalSearchResultPage==null)? finalSearchResultPage=new FinalSearchResultPage(driver): finalSearchResultPage;
+    }
 
 }

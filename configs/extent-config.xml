@@ -11,10 +11,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Ganesh - Cucumber Framework</documentTitle>
+        <documentTitle>Satendra - Cucumber Framework</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Ganesh - Cucumber Report</reportName>
+        <reportName>Satendra - Cucumber Report</reportName>
 
         <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>

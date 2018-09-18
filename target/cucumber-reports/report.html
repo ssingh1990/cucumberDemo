@@ -15,7 +15,7 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>Ganesh - Cucumber Framework</title>
+	<title>Satendra - Cucumber Framework</title>
 
 	<style type='text/css'>
 			
@@ -44,7 +44,7 @@
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>Ganesh - Cucumber Report</span>
+		<span class='report-name'>Satendra - Cucumber Report</span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 13, 2018 03:48:18 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 18, 2018 06:40:18 PM</span>
 				</a>
 			</li>
 			<li>
@@ -91,7 +91,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@wip</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -154,7 +154,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -169,7 +169,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -189,25 +189,25 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Auomated E2E</span>
-						<span class='test-time'>Aug 13, 2018 03:48:18 PM</span>
+						<span class='test-time'>Sep 18, 2018 06:40:18 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@regression</span>
+		<span class='category label white-text'>@wip</span>
 	</div>
-	<span class='duration right label'>0h 1m 43s+534ms</span>
+	<span class='duration right label'>0h 0m 45s+915ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Placing order 2nd</span>
+		<span class="desc-text">Verify google search result</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given user is on home page</span>
+			<span class="bdd-step-name">Given user is on google home page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -215,7 +215,7 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When he search for "dresses"</span>
+			<span class="bdd-step-name">When I search for "most visited place in delhi" in search field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -223,123 +223,15 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And chose to bye the first item</span>
+			<span class="bdd-step-name">And I click on the link in google search result page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node and pass' status='pass'>
+		<li test-id='6' class='node then pass' status='pass'>
 			
-			<b>And</b>
+			<b>Then</b>
 			
-			<span class="bdd-step-name">And move to checkout from mini cart</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='7' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And enter "customer" personal details on checkout page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='8' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And select some deleivry address</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='9' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And select payment method as "check"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And place order</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='11' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@regression</span>
-	</div>
-	<span class='duration right label'>0h 1m 18s+531ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Placing order 3rd</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='12' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given user is on home page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='13' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When he search for "dresses"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='14' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And chose to bye the first item</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='15' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And move to checkout from mini cart</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='16' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And enter "customer" personal details on checkout page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='17' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And select some deleivry address</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='18' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And select payment method as "check"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='19' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And place order</span>
+			<span class="bdd-step-name">Then I should navigate to search result page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -399,14 +291,14 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
+						<span class='category-name'>@wip</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -422,13 +314,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 13, 2018 03:48:18 PM</td>
-										<td class='linked' test-id='2'>Auomated E2E.Placing order 2nd</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 13, 2018 03:50:06 PM</td>
-										<td class='linked' test-id='11'>Auomated E2E.Placing order 3rd</td>
+										<td>Sep 18, 2018 06:40:18 PM</td>
+										<td class='linked' test-id='2'>Auomated E2E.Verify google search result</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -474,14 +361,14 @@
 
                         <li class='author displayed active'>
                             <div class='author-heading'>
-                                <span class='author-name'>GANESHKUMAR</span>
+                                <span class='author-name'>Satendra</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>2</span>
+                                        <span class='label pass'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 2</span>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
                                     
                                     
                                 </div>
@@ -497,13 +384,8 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Aug 13, 2018 03:48:18 PM</td>
-                                                <td class='linked' test-id='2'>Auomated E2E.Placing order 2nd</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Aug 13, 2018 03:50:06 PM</td>
-                                                <td class='linked' test-id='11'>Auomated E2E.Placing order 3rd</td>
+                                                <td>Sep 18, 2018 06:40:18 PM</td>
+                                                <td class='linked' test-id='2'>Auomated E2E.Verify google search result</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -537,31 +419,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 13, 2018 03:48:18 PM</div>
+					<div class='panel-lead'>Sep 18, 2018 06:40:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 13, 2018 03:51:28 PM</div>
+			 		<div class='panel-lead'>Sep 18, 2018 06:41:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>190,859ms</div>
+					<div class='panel-lead'>50,285ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -613,8 +495,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@regression</td>
-							<td>2</td>
+							<td>@wip</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -642,7 +524,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -651,7 +533,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 16,
+				passGrandChild: 4,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
